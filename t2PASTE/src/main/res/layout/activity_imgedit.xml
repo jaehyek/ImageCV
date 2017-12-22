@@ -1,0 +1,268 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+	<LinearLayout
+	    android:id="@+id/fl_1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_centerVertical="true"	    
+	    android:gravity="center" 
+	    android:background="#000000"
+	    android:src="@drawable/temp" >
+        
+	    <com.dai.t2paste.ImageDisplayView
+		    android:id="@+id/ImageDisplayView"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+		    android:layout_gravity="center"/>
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/llEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true">
+		<Button
+		    android:id="@+id/btnBack"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:background="@layout/btn_evt_manual_editing_back" />
+		
+		<Button
+		    android:id="@+id/btnReset"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:background="@layout/btn_evt_manual_editing_reset" />
+		
+		<Button
+		    android:id="@+id/btnUndo"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:background="@layout/btn_evt_manual_editing_undo" />
+		
+		<Button
+		    android:id="@+id/btnRedo"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:background="@layout/btn_evt_manual_editing_redo" />
+		
+		<Button
+		    android:id="@+id/btnColorchange"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:background="@layout/btn_evt_manual_editing_colorchange" />
+		<Button
+		    android:id="@+id/btnOriginalSize"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:background="@layout/btn_evt_manual_editing_originalsize" />
+		
+	    <Button
+		    android:id="@+id/btnOK"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:background="@layout/btn_evt_manual_editing_ok" /> 
+    </LinearLayout>
+    
+	
+    
+	<LinearLayout
+	    android:id="@+id/ll22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom">
+	   
+	    <Button
+		    android:id="@+id/btnPolygon"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentBottom="true"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:background="@drawable/btn_polygon" />
+	    
+	    <Button
+		    android:id="@+id/btnLine"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_alignParentBottom="true"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:background="@drawable/btn_line" />
+	    
+	    <Button
+		    android:id="@+id/btnDeltacolor"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"		    
+		    android:layout_alignParentBottom="true"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:background="@drawable/btn_deltacolor" />
+	    
+	    <Button
+		    android:id="@+id/btnHair"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_alignParentBottom="true"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:background="@drawable/btn_hair" />
+	    
+	    <Button
+		    android:id="@+id/btnThreshold"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentBottom="true"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:background="@drawable/btn_threshold" /> 
+	</LinearLayout> 
+	
+	
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/ll22"
+        android:baselineAligned="true" >
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" 
+	        android:gravity="center_vertical" >
+	        
+	        <TextView 
+	            android:id="@+id/tv_threshold"
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            android:text=" Threshold : 1"
+	            android:textColor="#FFFFFF" />
+	        
+			<SeekBar
+		        android:id="@+id/sb_threshold"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:max="19"
+		        android:progress="0" />
+		</LinearLayout>
+		
+		<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" 
+	        android:gravity="center">
+			<Button
+			    android:id="@+id/btnBackgrounding"
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"			    
+			    android:layout_marginTop="0dp"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginRight="5dp"
+			    android:background="@layout/btn_evt_manual_editing_colorchange" />
+			
+			<Button
+			    android:id="@+id/btnForegrounding"
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"			    
+			    android:layout_gravity="right"
+			    android:layout_marginTop="0dp"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginRight="5dp"
+			    android:background="@drawable/btn_polygon" />
+			<TextView 
+	            android:id="@+id/tv_thickness"
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            android:text=" Thickness : 1"
+	            android:textColor="#FFFFFF" />
+			<SeekBar
+		        android:id="@+id/sb_thickness"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:max="100"
+		        android:progress="0" />
+			
+		</LinearLayout>
+		<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" 
+	        android:gravity="center">
+			<Button
+			    android:id="@+id/btnBackgrounding_deltacolor"
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"			    
+			    android:layout_marginTop="0dp"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginRight="5dp"
+			    android:background="@layout/btn_evt_manual_editing_colorchange" />
+			
+			<Button
+			    android:id="@+id/btnForegrounding_deltacolor"
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"			    
+			    android:layout_gravity="right"
+			    android:layout_marginTop="0dp"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginRight="5dp"
+			    android:background="@drawable/btn_polygon" />
+			<TextView 
+	            android:id="@+id/tv_deltacolor"
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            android:text=" Deltacolor : 1"
+	            android:textColor="#FFFFFF" />
+			<SeekBar
+		        android:id="@+id/sb_deltacolor"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:max="10"
+		        android:progress="0" />
+			
+		</LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

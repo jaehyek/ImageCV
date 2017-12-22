@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:background="@drawable/paste_main">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    >   
+	
+	<Button
+        android:layout_width="266dp"
+        android:layout_height="52dp"
+        android:id="@+id/btnFacebook"
+        android:layout_gravity="center_horizontal"
+        android:background="@layout/btn_evt_startactivity_facebook"/>
+	
+	<Button
+        android:layout_width="266dp"
+        android:layout_height="52dp"
+        android:id="@+id/btnKakao"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@layout/btn_evt_startactivity_kakao"/>
+		
+	<Button
+        android:layout_width="266dp"
+        android:layout_height="52dp"
+        android:id="@+id/btnEtc"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@layout/btn_evt_startactivity_etc"/>
+	
+</LinearLayout>
+
+</RelativeLayout>

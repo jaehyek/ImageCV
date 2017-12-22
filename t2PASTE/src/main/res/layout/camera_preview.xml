@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+  <FrameLayout
+    android:id="@+id/camera_preview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    />
+  <ImageView
+	 	android:id="@+id/iv_view"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    />
+
+  <RadioButton
+      android:id="@+id/focus"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:text="" />
+  
+  <!-- 이녀석은 그냥 터치를 입력 받을 투명한 뷰 이므로 사이즈도 match_parent입니다
+       알파 값을 설정하려면 API 14 이상이여야 합니다 (진저브레드에서는 안되요) -->
+  <RadioButton
+      android:id="@+id/touchListener"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_centerInParent="true"
+      android:text=""
+      android:alpha="0" />
+  
+  <Button
+	        android:id="@+id/btn_takepictureN"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="사용 금지" />
+
+  <Button
+      android:id="@+id/btn_takepictureF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_toRightOf="@+id/btn_takepictureN"
+      android:text="Pic Close" />
+  
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    >   
+	  <ImageView
+	 	android:id="@+id/iv_shot"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:src="@drawable/shot"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginBottom="30dp" />
+	</LinearLayout>
+</RelativeLayout>
